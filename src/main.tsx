@@ -1,15 +1,15 @@
-import { StrictMode } from "react";
-import { createRoot } from "react-dom/client";
+import { StrictMode } from 'react';
+import { createRoot } from 'react-dom/client';
+import { BrowserRouter } from 'react-router';
 
-import { BrowserRouter } from "react-router";
-import RootRoute from "./routes/RootRoute.tsx";
+import RootRoute from '@/route';
 
-const root = document.getElementById("root");
+const root = document.getElementById('root');
 
 createRoot(root!).render(
   <StrictMode>
     <BrowserRouter>
       <RootRoute />
     </BrowserRouter>
-  </StrictMode>
+  </StrictMode>,
 );
