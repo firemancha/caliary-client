@@ -6,6 +6,7 @@ on:
 
 jobs:
   build:
+    name: Caliary Client Build Test
     runs-on: ubuntu-latest
 
     strategy:
