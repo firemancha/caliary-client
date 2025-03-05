@@ -6,9 +6,11 @@
   "scripts": {
     "dev": "vite",
     "build": "tsc -b && vite build",
-    "lint": "eslint .",
+    "lint": "eslint",
     "preview": "vite preview",
-    "prepare": "husky && chmod ug+x .husky/*"
+    "prepare": "husky && chmod ug+x .husky/*",
+    "format": "prettier --check --ignore-path .prettierignore .",
+    "format:fix": "prettier --write --ignore-path .prettierignore ."
   },
   "dependencies": {
     "react": "^19.0.0",
